@@ -1,0 +1,40 @@
+// style.scss
+@import './fonts.scss';
+// Style
+
+@import './reset.scss';
+
+// plagins
+
+@import './plugins/air-datepicker.scss';
+@import './plugins/swiper.scss';
+@import './plugins/simplebar.scss';
+
+// Blocks
+
+
+@import './blocks/page.scss';
+@import './blocks/card.scss';
+@import './blocks/net.scss';
+@import './blocks/breadcrambs.scss';
+@import './blocks/choise.scss';
+@import './blocks/calendar.scss';
+@import './blocks/news-box.scss';
+@import './blocks/title.scss';
+@import './blocks/btn.scss';
+@import './blocks/search.scss';
+@import './blocks/phone.scss';
+
+@import './blocks/social.scss';
+@import './blocks/news-slider.scss';
+@import './blocks/footer.scss';
+@import './blocks/riple.scss';
+
+@import './blocks/logo.scss';
+@import './blocks/header.scss';
+@import './blocks/burger.scss';
+@import './blocks/basket.scss';
+@import './blocks/banner.scss';
+@import './blocks/cross.scss';
+@import './blocks/menu-link.scss';
+@import './blocks/btn-arrow.scss';

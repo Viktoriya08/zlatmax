@@ -1,0 +1,22 @@
+// fonts.scss
+
+// Fonts
+@font-face {
+    font-family: 'Frank';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src:
+         url('./../fonts/FrankLight.woff2') format('woff2'),
+         url('./../fonts/FrankLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Frank';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+         url('./../fonts/FrankRegular.woff2') format('woff2'),
+         url('./../fonts/FrankRegular.woff') format('woff');
+}
+// ----------------------------------------------------------------------------------------------------

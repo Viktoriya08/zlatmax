@@ -1,0 +1,19 @@
+.breadcrambs{
+    & a{
+        font-size: 16px;
+        line-height: 22px;
+        color: #959595;
+        padding-right: 5px;
+        &:not(:last-child)::after{
+            content: '/';
+            display: inline;
+            padding-left: 5px;
+        }
+        &:hover{
+            color: #9F0023;
+            &::after{
+                color: #959595;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.net{
+    display: flex;
+    flex-wrap: wrap;
+    & .net__el{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:768px){
+    .net{
+        margin-left: -25px;
+        margin-right: -25px;
+        & .net__el{
+            width: 50%;
+            padding: 0 25px;
+        }
+    }
+}
+@media (min-width:1200px){
+    .net{
+        & .net__el{
+            width: 33.3333333%;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+  

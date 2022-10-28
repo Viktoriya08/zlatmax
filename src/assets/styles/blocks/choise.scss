@@ -1,0 +1,112 @@
+.choise{
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    &--border{
+        width: 100%;
+        & .choise__btn{
+            border: 2px solid #373334;
+            &:disabled{
+                opacity: .6;
+                pointer-events: none;
+            }
+        }
+        
+    }
+    &--grey{
+        & .choise__btn--grey{
+            background-color:#e5e5e5;
+        }
+        & .choise__box{
+            background-color:#e5e5e5;
+            &.open{
+                border: none;
+            }
+        }
+    }
+    &__btn{
+        width: 100%;
+        border: none;
+        padding: 20px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+        &::after{
+            content: ' ';
+            display: inline-block;
+            background: url(../images/down.svg) center / contain no-repeat;
+            width: 10px;
+            height: 10px;
+        }
+        &.open{
+            background-color: #fff;
+            &::after{
+                transform: rotate(180deg);
+            }
+        }
+        
+        &--grey{
+            &.open{
+                background-color:#e5e5e5;
+            }
+        }
+    }
+    &__box{
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        max-height: 0;
+        overflow: hidden;
+        & .choise__category{
+            padding: 10px 25px;
+            border: none;
+            background-color: transparent;
+            text-align: left;
+            display: block;
+            width: 100%;
+            &:not([disabled]){
+                cursor: pointer;  
+            }
+            &:not([disabled]):hover{
+                color: #9F0023;
+            }
+            &[disabled]{
+                cursor: auto;
+            }
+        }
+        &.open{
+            max-height: 250px;
+            /* overflow: auto; */
+            border: 2px solid #373334;
+            border-top: none;
+            transition: .5s ease max-height;
+            z-index: 3;
+        }
+        & .choise__wrap{
+            margin: 10px 5px;
+            max-height: 215px;
+            padding-right: 10px;
+        }
+    }
+    & .simplebar-track.simplebar-vertical{
+        width: 9px;
+    }
+    & .simplebar-scrollbar{
+        &::before{
+           border-radius: 0; 
+        }
+        &.simplebar-visible:before{
+            opacity: 1;
+        }
+    }
+
+}

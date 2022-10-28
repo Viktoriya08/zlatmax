@@ -1,0 +1,35 @@
+.news-box{
+    &__calendar,
+    &__choise{
+        margin-bottom: 20px;
+        height: 65px;
+    }
+    &__choise{
+        & button{
+            height: 100%;
+            background-color: #e5e5e5;
+        }
+    }
+}
+@media(min-width: 768px){
+    .news-box{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &__calendar,
+        &__choise{
+            width: 50%;
+        }
+    }
+}
+@media (min-width:1200px){
+    .news-box{
+        gap: 50px;
+        margin-bottom: 85px;
+        &__calendar,
+        &__choise{
+            width: 470px;
+            margin-bottom: 0;
+        }
+    }
+}

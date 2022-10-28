@@ -1,0 +1,36 @@
+.social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    & p{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    & .social__icon a{
+        padding: 0;
+    }
+}
+@media(min-width: 1200px){
+    .social{
+        & p{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        & .social__icon{
+            transition: all .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+@media(min-width: 1600px){
+    .social{
+        & p{
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+}

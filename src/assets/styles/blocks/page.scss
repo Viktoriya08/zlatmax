@@ -1,0 +1,71 @@
+// body.scss
+
+// Body
+
+body{
+    font-family: 'Frank', sans-serif;
+    font-size: 14px;
+    color: #373334;
+    line-height: 1;
+    background-color: #E5E5E5;
+}
+.body.overflow{
+    overflow: hidden;
+}
+.container{
+    padding: 0 15px;
+}
+.page-content{
+    & .title{
+        margin-bottom: 5px;
+    }
+    & .breadcrambs{
+        margin-bottom: 30px;
+    }
+}
+.content-w{
+    background-color: #fff;
+}
+/* @media (min-width:768px){
+    .container{
+        padding: 0 25px;
+        max-width: 718px;
+    }
+} */
+
+@media (min-width:1200px){
+    .container{
+        padding: 0 25px;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    .page-content{
+        & .breadcrambs{
+            margin-bottom: 50px;
+        }
+    }
+    .content-w{
+        background-color: transparent;
+    }
+}
+@media (min-width:1600px){
+    .container{
+        padding: 0 25px;
+        max-width: 1545px;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.fadeInUp {
+animation: fadeInUp .3s;
+} 

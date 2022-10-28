@@ -1,0 +1,91 @@
+.calendar{
+    position: relative;
+    &__input{
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 30px 20px 65px;
+        width: 100%;
+        border: 2px solid #373334;
+        background-color: #E5E5E5;
+        background: url(../images/calendar.svg) 20px center / auto no-repeat;
+        cursor: pointer;
+        &:focus{
+            background-color: #fff;
+            outline: none;
+        }
+    }
+    &::after{
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform:translate(0, -50%);
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        display: inline-block;
+        background: url(../images/down.svg) center / contain no-repeat;
+        width: 10px;
+        height: 10px;
+        pointer-events: none;
+    }
+    &.open{
+        &::after{
+            transform:translate(0, -50%) rotate(180deg);
+            -webkit-transform: translate(0,-50%) rotate(180deg);
+            -ms-transform: translate(0,-50%) rotate(180deg);
+        }
+    }
+    
+}
+
+.calendar__air-datepicker{
+    & .air-datepicker-nav{
+        border-bottom: none;
+    }
+    & .air-datepicker-body--day-name{
+        color: #373334;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    & .air-datepicker-body--cells{
+        align-items: center;
+    }
+    & .air-datepicker-body--day-names{
+        padding-bottom: 15px;
+        border-bottom: 1px solid #373334;
+    }
+    & .air-datepicker-cell{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    & .air-datepicker-cell.-current-{
+        color: #9F0023;
+    }
+    & .air-datepicker-cell.-selected-{
+        border: 1px solid #373334;
+        color: #373334;
+        background: #fff;
+    }
+    & .air-datepicker-cell.-selected-.-current-{
+        color: #373334;
+        border: 1px solid #373334;
+        background: #fff;
+    }
+    & .air-datepicker-nav--action{
+        width: 32px;
+        height: 32px;
+        background: url(../images/arrow-red.svg) center/auto no-repeat;
+        & svg{
+            display: none;
+        }
+        &[data-action='prev']{
+            transform: rotate(180deg);
+        }
+        &:hover{
+            background-color: #37333438;
+        }
+    }
+}

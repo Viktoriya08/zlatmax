@@ -1,0 +1,12 @@
+.search{
+    & .search__btn{
+        border: none;
+        background: url(../images/search.svg) center / auto no-repeat;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+}

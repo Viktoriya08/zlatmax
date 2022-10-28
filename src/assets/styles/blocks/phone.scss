@@ -1,0 +1,15 @@
+.phone{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #373334;
+    &:hover{
+        color: #9f0023;
+    }
+}
+@media(min-width: 1200px){
+    .phone{
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
