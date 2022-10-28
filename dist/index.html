@@ -1,0 +1,755 @@
+    <!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+    <!-- Head -->
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новый проект</title>
+        <!-- / Meta -->
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/styles/style.min.css">
+        <!-- / Styles -->
+
+    </head>
+    <!-- / Head -->
+
+    <!-- Body -->
+    <body class="body">
+        
+
+    <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__box">
+                        <a href="tel:83513651711" class="phone">
+                            <svg width="23" height="24" viewBox="0 0 23 24">
+                                <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#phone"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="">
+                            <svg width="23" height="28" viewBox="0 0 23 28">
+                                <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#pa"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="">
+                            <svg width="28" height="27" viewBox="0 0 28 27">
+                                <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#favorite"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="basket" data-counter="0">
+                            <svg width="28" height="30" viewBox="0 0 28 30">
+                                <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#basket"></use>
+                            </svg>
+                        </a>
+                        <div class="burger"><span></span></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="header__logo">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="/assets/images/logo.svg" alt="логотип Zlatmax">
+                    </a>
+                </div>
+            </div>
+            <div class="header__menu">
+                <!-- 1 уровень -->
+                <div class="header__menu-mobile">
+                    <span class="header__menu-mobile-title"></span>
+                    <button type="button" class="cross"></button>
+                </div>
+
+                <div class="header__menu-main header__menu-list">
+                    <div class="container">
+                        <ul class="">
+                            <li><a class="menu-link" href="#">
+                                <svg width="23" height="28" viewBox="0 0 23 28">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#pa"></use>
+                                </svg>
+                                Личный кабинет</a>
+                            </li>
+                            <li><button type="button" class="menu-link menu-link--arrow menu-link--hidden js-mobile-menu" data-category-menu="1">Каталог товаров</button></li>
+                            <li><a class="menu-link" href="#">Контакты</a></li>
+                            <li><a class="menu-link" href="#">Новости</a></li>
+                            <li><a class="menu-link" href="#">Оплата и доставка</a></li>
+                            <li><a class="menu-link" href="#">О нас</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <nav class="header__nav">
+                    <div class="container">
+                    <!-- 2 уровень -->
+                        <div class="header__list js-menu-list" data-category-menu="1">
+                            <div class="header__menu-mobile">
+                                <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                <span class="header__menu-mobile-title"></span>
+                                <button type="button" class="cross"></button>
+                            </div>
+                            <ul class="header__menu-list header__menu-list--flex">
+                                <li><a class="menu-link menu-link--arrow js-mobile-menu" href="#" data-category-menu="2">Каталог ножей</a>
+
+                                    <!-- 3 уровень -->
+                                    <div class="header__list header__list--absolute js-menu-list" data-category-menu="2">
+                                        <div class="header__menu-mobile">
+                                            <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                            <span class="header__menu-mobile-title"></span>
+                                            <button type="button" class="cross"></button>
+                                        </div>
+                                        <ul class="header__menu-list header__menu-list--sub container">
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--arrow menu-link--border js-mobile-menu" href="#"  data-category-menu="4">Категория ножей</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="4">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Разделочные ножи</a> </li>
+                                                        <li><a class="menu-link" href="#">Туристические ножи</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи охотничьи</a> </li>
+                                                        <li><a class="menu-link" href="#">Булатные ножи</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из дамаска</a> </li>
+                                                        <li><a class="menu-link" href="#">Тактического назначения</a> </li>
+                                                        <li><a class="menu-link" href="#">Метательные ножи</a> </li>
+                                                        <li><a class="menu-link" href="#">Мачете и кукри</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи кухонные</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--arrow menu-link--border js-mobile-menu" href="#" data-category-menu="5">Производство ножей</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="5">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Ножи АИР</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи ЗИК</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи ЗЗОСС</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи РОСоружие</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи Оружейник</a> </li>
+                                                        <li><a class="menu-link" href="#">Булат Сергея Баранова</a> </li>
+                                                        <li><a class="menu-link" href="#">Булат Андрея Умерова</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи Златко</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи Стиль-М</a> </li>
+                                                        <li><a class="menu-link" href="#">Оружейная компания</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--border js-mobile-menu" href="#" data-category-menu="8">Ножи по маркам стали</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="8">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Ножи из стали 40х102С2М</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали 95х18</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали 100х13м</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали 110х18м-ШД</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали ЭИ-107 ТЦ</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали 50х14МФ</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали AUS-8</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали К340</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали M390</a> </li>
+                                                        <li><a class="menu-link" href="#">Ножи из стали ЭП-766</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--border js-mobile-menu" href="#" data-category-menu="9">Заточка и полировка ножей</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="9">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Паста ГОИ</a> </li>
+                                                        <li><a class="menu-link" href="#">Алмазная паста</a> </li>
+                                                        <li><a class="menu-link" href="#">Бруски и камни для заточки</a> </li>
+                                                        <li><a class="menu-link" href="#">Заточные системы</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--border js-mobile-menu" href="#" data-category-menu="10">Ножевая мастерская</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="10">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Ножевые клинки</a> </li>
+                                                        <li><a class="menu-link" href="#">Заготовки для ножей</a> </li>
+                                                        <li><a class="menu-link" href="#">Литье для ножей</a> </li>
+                                                        <li><a class="menu-link" href="#">Материалы для рукоятей</a> </li>
+                                                        <li><a class="menu-link" href="#">Уход за рукоятиями ножей</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <!-- / 3 уровень -->
+
+                                </li>
+                                <li><a class="menu-link menu-link--arrow js-mobile-menu" href="#" data-category-menu="3">Клинковое оружие</a>
+                                
+                                    <!-- 3 уровень -->
+                                    <div class="header__list header__list--absolute js-menu-list" data-category-menu="3">
+                                        <div class="header__menu-mobile">
+                                            <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                            <span class="header__menu-mobile-title"></span>
+                                            <button type="button" class="cross"></button>
+                                        </div>
+                                        <ul class="header__menu-list header__menu-list--sub container">
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--arrow menu-link--border js-mobile-menu" href="#" data-category-menu="6">Клинковое оружие 1</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="6">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 1.1</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--arrow menu-link--border js-mobile-menu" href="#" data-category-menu="7">Клинковое оружие 2</a>
+                                                <!-- 4 уровень -->
+                                                <div class="header__list js-menu-list" data-category-menu="7">
+                                                    <div class="header__menu-mobile">
+                                                        <button type="button" class="btn-arrow js-catalog-prev"></button>
+                                                        <span class="header__menu-mobile-title"></span>
+                                                        <button type="button" class="cross"></button>
+                                                    </div>
+                                                    <ul class="header__menu-list header__menu-list--child">
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                        <li><a class="menu-link" href="#">Клинковое оружие 2.1</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--border" href="#">Клинковое оружие 3</a>
+                                                <!-- 4 уровень -->
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--border" href="#">Клинковое оружие 4</a>
+                                                <!-- 4 уровень -->
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                            <li class="header__menu-elem-sub">
+                                                <a class="menu-link menu-link--border" href="#">Клинковое оружие last</a>
+                                                <!-- 4 уровень -->
+                                                <a class="menu-link menu-link--border-top" href="#">Смотреть все</a>
+                                                <!-- / 4 уровень -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- / 3 уровень -->
+                                </li>
+                                <li><a class="menu-link" href="#">Сувенирные изделия</a></li>
+                                <li><a class="menu-link" href="#">Фонари ARMYTEK</a></li>
+                                <li><a class="menu-link" href="#">Сопуствующие товары</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="header__more">
+                        <div class="choise choise--grey">
+                            <button class="choise__btn choise__btn--grey js-choise-btn" data-choise-btn="3" type="button">Еще</button>
+                            <div class="header__box-list choise__box js-choise-box" data-choise-btn="3">
+                                <ul class="choise__wrap"  data-simplebar>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="social">
+                        <p>Подписывайтесь на нас:</p>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#yt"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ok"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ig"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div> -->
+                </nav>
+            </div>
+    </header>
+
+    <!-- Page -->
+    <div class="page">
+
+        <section class="banner" style="background-image: url(/assets/images/banner.jpg);">
+            <div class="container">
+                <div class="title">
+                    <h1></h1>
+                    <p>
+                    
+                    </p>
+                </div>
+                <div class="banner__img">
+                    <img src="/assets/images/main-img.png" alt="набор ножей">
+                </div>
+            </div>
+        </section>
+
+        <section class="page-content">
+
+            <div class="container">
+
+                <!-- Ripple Hover Effects -->
+                <div class="net">
+                    <div class="net__el riple">
+                        <button class="riple__btn"><span class="riple__span">hover me</span> </button>
+                    </div>
+                    <div class="net__el riple">
+                        <button class="riple__btn riple__btn--opacity"><span class="riple__span">hover me</span> </button>
+                    </div>
+                </div>
+
+                <!-- / Ripple Hover Effects -->
+                <h1 class="title">Все новости</h1>
+                <div class="breadcrambs">
+                    <a href="#">Главная</a>
+                    <a href="#">Новости</a>
+                </div>
+
+                <div class="news-box">
+
+                    <div class="calendar news-box__calendar">
+                        <input type="text" class="calendar__input" autocomplete="off" readonly>
+                        <div class="calendar__air-datepicker"></div>
+                    </div>
+
+                    <div class="choise choise--border news-box__choise">
+                        <button class="choise__btn js-choise-btn" data-choise-btn="1" type="button">
+                            <span class="choise__title">Выбрать рубрику</span> 
+                        </button>
+
+                        <div class="choise__box js-choise-box js-choise-box--name js-news-category" data-choise-btn="1">
+                            <div  class="choise__wrap"  data-simplebar>
+                                <button type="button" class="choise__category" data-category-news="1" disabled>Медицина</button>
+                                <button type="button" class="choise__category" data-category-news="2">Общество</button>
+                                <button type="button" class="choise__category" data-category-news="3">Коммуналка</button>
+                                <button type="button" class="choise__category" data-category-news="4">Политика</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="net" id="news">
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-w">
+            <div class="container">
+                <div class="news-slider">
+                    <div class="news-slider__swiper swiper">
+
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 1</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 2</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="news-slider__pagination">
+                        <div class="swiper-pagination"></div>
+
+
+                        <div class="news-slider__prev">
+                            <button class="news-slider__btn" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#arrow-custom"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="news-slider__next">
+                            <button class="news-slider__btn" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#arrow-custom"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- / Page -->
+
+    <footer class="footer">
+        
+            <div class="footer__top">
+                <div class="container">
+                    <div class="social">
+                        <p>Подписывайтесь на нас:</p>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#yt"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ok"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ig"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="footer__down">
+                <div class="container">
+                    <p>© 2021 «Златоустовское телевидение»
+                        Политика конфиденциальности
+                    </p>
+                    <div class="footer__logo">
+                        <img src="/assets/images/footer-logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        
+    </footer>
+
+<!-- шаблон карточки новостей -->
+
+<template id="news-template">
+
+    <div class="net__el fadeInUp">
+
+        <div class="card js-news-card">
+            <a href="#" class="card__link"></a>
+            <div class="card__img">
+                <img src="" alt="фото статьи"><!-- поставить заглушку в src если с бека не придет картинка -->
+            </div>
+            <div class="card__title">
+                <div class="card__cat">
+                </div>
+                <span class="card__date"></span>
+            </div>
+            <p class="card__text">
+            </p>
+        </div>
+    
+    </div>
+    
+</template>
+
+<!-- /  шаблон карточки новостей -->
+
+
+    
+        <!-- Scripts -->
+        <script src="./assets/scripts/script.min.js"></script>
+        <!-- / Scripts -->
+        
+    </body>
+    <!-- / Body -->
+
+</html>
